@@ -25,5 +25,5 @@ dist-ssr
 
 # Personal files
 *.env
-*.assets
+src/assets/
 *.DS_Store
