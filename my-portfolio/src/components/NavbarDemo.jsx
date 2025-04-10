@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Menu, MenuItem, HoveredLink } from "./ui/navbar-menu";
 import { cn } from "../lib/utils";
-import Home from "../assets/home.png";
 
 export function NavbarDemo() {
   const [active, setActive] = useState(null);
