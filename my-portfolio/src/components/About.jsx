@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { SiReact, SiNextdotjs, SiTailwindcss, SiVite, SiTypescript, SiJavascript, SiNodedotjs, SiPython, SiDjango, 
          SiOpenai, SiMongodb, SiPostgresql, SiMysql, SiFirebase, SiDocker, SiNetlify, SiJenkins, SiGithub, 
          SiGit, SiPostman, SiSentry, SiCplusplus, } from 'react-icons/si';
