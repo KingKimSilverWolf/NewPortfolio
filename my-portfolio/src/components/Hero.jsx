@@ -9,7 +9,7 @@ function Hero() {
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="grid max-w-lg grid-cols-1 mx-auto lg:max-w-full lg:items-center lg:grid-cols-2 gap-y-12 lg:gap-x-16">
             <div>
-              <div className="text-center lg:text-left">
+              <div className="text-center lg:text-left ml-3">
                 <h1 className="text-4xl font-bold leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:leading-tight lg:text-6xl sm:mt-22">
                   Hi, my name is Kim Magidhi 👋🏽
                 </h1>
