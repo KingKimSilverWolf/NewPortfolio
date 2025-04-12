@@ -50,7 +50,7 @@ export function ThreeDMarqueeDemo() {
   ];
   return (
     <div
-      className="relative mx-auto my-10 flex h-screen w-full max-w-7xl flex-col items-center justify-center overflow-hidden rounded-3xl">
+      className="relative mx-auto my-10 flex h-150 w-full max-w-7xl flex-col items-center justify-center overflow-hidden rounded-3xl">
       <h2
         className="relative z-20 mx-auto max-w-4xl text-center text-5xl font-bold text-balance text-white md:text-4xl lg:text-6xl">
             Projects
