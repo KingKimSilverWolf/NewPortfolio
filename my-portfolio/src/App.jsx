@@ -9,6 +9,9 @@ import { BackgroundBeamsWithCollision } from './components/ui/background-beams-w
 import { BentoGrid } from './components/ui/bento-grid';
 import  SoftwareDevCycle  from './components/SoftwareDevCycle';
 import Loader from './components/Loader';
+import {BackgroundLinesDemo} from './components/BackgroundLinesDemo';
+import { BackgroundLines } from './components/ui/background-lines';
+import { ThreeDMarqueeDemo } from './components/ThreeDMarqueeDemo';
 
 
 function App() {
@@ -28,6 +31,8 @@ function App() {
         </div>
       </BackgroundBeamsWithCollision>
       <SoftwareDevCycle />
+      <ThreeDMarqueeDemo />
+
       <p className='flex flex-col text-transparent bg-clip-text bg-gradient-to-r from-black to-gray-400 font-medium items-center text-4xl mt-6'>Website Is Still Under Construction...</p>
       <div className='flex flex-col items-center justify-center mt-5 mb-10'>
         <Loader />

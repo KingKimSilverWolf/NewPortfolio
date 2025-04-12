@@ -12,6 +12,10 @@ import {
 import plan from '../assets/plan1.jpg'
 import design from '../assets/design.jpg'
 import dev from '../assets/dev.jpg'
+import maintenance from '../assets/a.jpg'
+import testing from '../assets/d.jpg'
+import deploy from '../assets/b.jpg'
+import monitoring from '../assets/c.jpg'
 
 // Define each stage of your development cycle.
 const items = [
@@ -56,9 +60,9 @@ const items = [
     description: "Ensure quality through rigorous testing.",
     header: (
       <img
-        src="https://via.placeholder.com/150"
+        src={testing}
         alt="Testing"
-        className="rounded-lg object-cover w-full h-full"
+        className="rounded-lg object-cover w-full h-43"
       />
     ),
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
@@ -70,7 +74,7 @@ const items = [
     description: "Launch the product to production.",
     header: (
       <img
-        src="https://via.placeholder.com/150"
+        src={deploy}
         alt="Deployment"
         className="rounded-lg object-cover w-full h-full"
       />
@@ -82,7 +86,7 @@ const items = [
     description: "Track performance and uptime.",
     header: (
       <img
-        src="https://via.placeholder.com/150"
+        src={monitoring}
         alt="Monitoring"
         className="rounded-lg object-cover w-full h-full"
       />
@@ -94,9 +98,9 @@ const items = [
     description: "Update and improve the system continuously.",
     header: (
       <img
-        src="https://via.placeholder.com/150"
+        src={maintenance}
         alt="Maintenance"
-        className="rounded-lg object-cover w-full h-full"
+        className="rounded-lg object-cover w-140 h-40"
       />
     ),
     icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
