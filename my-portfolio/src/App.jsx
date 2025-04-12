@@ -18,7 +18,9 @@ function App() {
   return (
     <div className="App">
       <NavbarDemo />
+
       <Hero />
+
       <About />
       <BackgroundBeamsWithCollision>
         <div className="text-center z-10 relative">
@@ -29,10 +31,11 @@ function App() {
             From ideation to deployment, here's how I bring ideas to life.
           </p>
         </div>
-      </BackgroundBeamsWithCollision>
-      <SoftwareDevCycle />
-      <ThreeDMarqueeDemo />
+      </BackgroundBeamsWithCollision> 
+      <SoftwareDevCycle /> {/* Software Development Cycle */}
 
+      <ThreeDMarqueeDemo /> {/* Project Preview with sliding pictures */}
+      <Projects /> {/* Projects */}
       <p className='flex flex-col text-transparent bg-clip-text bg-gradient-to-r from-black to-gray-400 font-medium items-center text-4xl mt-6'>Website Is Still Under Construction...</p>
       <div className='flex flex-col items-center justify-center mt-5 mb-10'>
         <Loader />
