@@ -1,6 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Menu, MenuItem, HoveredLink } from "./ui/navbar-menu";
 import { cn } from "../lib/utils";
+import comp from '../assets/code.png';
+import home from '../assets/house.png';
+import resume from '../assets/resume.png';
+import projects from '../assets/projects.png';
+import contact from '../assets/contact.png';
+import sdlc from '../assets/sdlc.png';
 
 export function NavbarDemo() {
   const [active, setActive] = useState(null);
@@ -35,23 +41,66 @@ export function NavbarDemo() {
         <Menu setActive={setActive}>
           <MenuItem setActive={setActive} active={active} item="Home 🏠">
             <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="#home">Home 👋🏽</HoveredLink>
+              <HoveredLink href="#home">
+                Home
+                <img 
+                  src={home}
+                  alt="Tech Stack"
+                  className="inline-block w-4 h-4 ml-1 animate-bounce"
+                /> 
+              </HoveredLink>
             </div>
           </MenuItem>
           <MenuItem setActive={setActive} active={active} item="About 🧑🏾‍💻">
             <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="#about">About Me</HoveredLink>
+              <HoveredLink href="#about">
+                Tech Stack 
+                <img 
+                  src={comp}
+                  alt="Tech Stack"
+                  className="inline-block w-4 h-4 ml-1 animate-bounce"
+                />
+                </HoveredLink>
+              <HoveredLink href='#resume'>
+                Resume
+                <img 
+                  src={resume}
+                  alt="Tech Stack"
+                  className="inline-block w-4 h-4 ml-1 animate-bounce"
+                />
+              </HoveredLink>
             </div>
           </MenuItem>
           <MenuItem setActive={setActive} active={active} item="Projects 🛹">
             <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="#projects">My Projects</HoveredLink>
+              <HoveredLink href="#sdlc">
+                Project Development
+                <img 
+                  src={sdlc}
+                  alt="Tech Stack"
+                  className="inline-block w-4 h-4 ml-1 animate-bounce"
+                />
+              </HoveredLink>
+              <HoveredLink href="#projects">
+                Projects
+                <img 
+                  src={projects}
+                  alt="Tech Stack"
+                  className="inline-block w-4 h-4 ml-1 animate-bounce"
+                />
+              </HoveredLink>
             </div>
           </MenuItem>
           <MenuItem setActive={setActive} active={active} item="Contact 📱">
             <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="#contact">Contact</HoveredLink>
-              <HoveredLink href="/resume.pdf">Resume</HoveredLink>
+              <HoveredLink href="#contact">
+                Contact
+                <img 
+                  src={contact}
+                  alt="Tech Stack"
+                  className="inline-block w-4 h-4 ml-1 animate-bounce"
+                />
+              </HoveredLink>
             </div>
           </MenuItem>
         </Menu>

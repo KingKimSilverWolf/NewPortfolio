@@ -60,7 +60,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="relative container mx-auto px-1 py-0">
+    <div className="relative container mx-auto px-1 py-0" id="projects">
       {/* Left Scroll Button */}
       <button
         onClick={scrollLeft}

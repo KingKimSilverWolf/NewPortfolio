@@ -12,6 +12,7 @@ import Loader from './components/Loader';
 import {BackgroundLinesDemo} from './components/BackgroundLinesDemo';
 import { BackgroundLines } from './components/ui/background-lines';
 import { ThreeDMarqueeDemo } from './components/ThreeDMarqueeDemo';
+import ResumeSection from './components/ResumeSection';
 
 
 function App() {
@@ -19,9 +20,10 @@ function App() {
     <div className="App">
       <NavbarDemo />
 
-      <Hero />
+      <Hero id='home'/>
 
       <About />
+      <ResumeSection /> {/* Resume Section */}
       <BackgroundBeamsWithCollision>
         <div className="text-center z-10 relative">
           <h2 className="text-3xl md:text-5xl font-bold text-gray-800 dark:text-white">
@@ -32,13 +34,16 @@ function App() {
           </p>
         </div>
       </BackgroundBeamsWithCollision> 
-      <SoftwareDevCycle /> {/* Software Development Cycle */}
+      <SoftwareDevCycle id='sdlc'/> {/* Software Development Cycle */}
 
       <ThreeDMarqueeDemo /> {/* Project Preview with sliding pictures */}
       <Projects /> {/* Projects */}
-      <p className='flex flex-col text-transparent bg-clip-text bg-gradient-to-r from-black to-gray-400 font-medium items-center text-4xl mt-6'>Website Is Still Under Construction...</p>
-      <div className='flex flex-col items-center justify-center mt-5 mb-10'>
-        <Loader />
+
+      <div className='flex flex-col items-center justify-center mt-5  bg-gray-50 ' id='contact'>
+        <p className='mt-7 max-w-xl mx-auto text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 font-medium text-2xl'>Get In Touch</p>
+        <p className='text-2xl md:text-5xl font-bold text-gray-800 dark:text-white mt-1'>Contact Me</p>
+        <Contact id='contact'/> {/* Contact */}
+        <p className='mb-3 pb-3 pt-2 mt-2 text-gray-500'>Copyright @ 2025 Kim Magidhi</p>
       </div>
       
     </div>

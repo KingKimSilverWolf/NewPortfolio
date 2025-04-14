@@ -111,7 +111,7 @@ const items = [
 
 export default function SoftwareDevCycle() {
   return (
-    <section id="workflow" className="py-12 bg-gray-50">
+    <section id="sdlc" className="py-12 bg-gray-50">
       <h2 className="text-3xl font-bold text-center mb-8">My Software Development Cycle</h2>
       <BentoGrid className="max-w-4xl mx-auto">
         {items.map((item, i) => (
